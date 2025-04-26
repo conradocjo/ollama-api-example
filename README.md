@@ -37,7 +37,7 @@ curl -X POST http://localhost:11434/api/pull -d '{"name": "llama3"}'
 
 curl -X POST http://localhost:11434/api/generate -d '{
   "model": "llama3",
-  "prompt": "Qual é a capital da França?"
+  "prompt": "me fale qual a capital do Brasil"
 }'
 ```
 
@@ -46,5 +46,11 @@ Agora suba a aplicação Java em uma IDE, ou gere o pacote com comando:
 
 ```bash
 mvn clean package
+```
 
+Para testar use a chamada:
+
+```bash
+curl --location --request POST 'http://localhost:8080/teste?pergunta=me%20fale%20qual%20a%20capital%20do%20Brasil'
+```
 
