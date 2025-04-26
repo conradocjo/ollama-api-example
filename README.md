@@ -41,3 +41,10 @@ curl -X POST http://localhost:11434/api/generate -d '{
 }'
 ```
 
+
+Agora suba a aplicação Java em uma IDE, ou gere o pacote com comando:
+
+```bash
+mvn clean package
+
+
